@@ -1,5 +1,5 @@
-# import libraries
-from flask import Flask, render_template, request
+# app.py
+from flask import Flask, render_template, request, url_for
 from newsapi import NewsApiClient
 
 # init flask app
@@ -60,4 +60,4 @@ def home():
     return render_template("home.html")
 
 if __name__ == "__main__":
-    app.run(debug = True)
+    app.run(debug=True)
